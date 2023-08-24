@@ -35,12 +35,18 @@ body.fade-out{
 }
 
 .Welcome-Heading-Container span.Heading-Text{
-    background-color: rgb(70, 69, 69);
     color: antiquewhite;
+    text-shadow: 3px 3px 3px black;
     padding: 15px;
     font-size: 2vw;
-    border: 2px solid rgb(192, 192, 192);
-    border-radius: 20px;
+}
+
+.Welcome-Heading-Container span.welcome-text{
+    color: antiquewhite;
+    text-shadow: 3px 3px 3px black;
+    padding: 15px;
+    padding-top: 20vh;
+    font-size: 2vw;
 }
 
 .row p{
@@ -57,6 +63,10 @@ body.fade-out{
     position: absolute;
 }
 
+.row-1 a{
+    z-index: 10;
+}
+
 .row-2{
     width: 100%;
     height: 150px;
@@ -68,16 +78,15 @@ body.fade-out{
 }
 
 .row-2 a{
-    text-decoration: none;
     color: antiquewhite;
     cursor: pointer;
-    z-index: 10;
+    z-index: 9;
 }
 
 .background-image2{
     background-image: url("Images/Coding_Pic1.jpg");
     height: 600px;
-    z-index: -1;
+    z-index: -3;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -161,7 +170,7 @@ form{
 
 #form-container{
     display: none;
-    z-index: 10;
+    z-index: 9;
 }
 
 .open-button{
@@ -192,10 +201,16 @@ form h2{
     text-align: center;
 }
 
+.profile-pic{
+    padding-top: 65vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 .img-1{
     padding-top: 50px;
     position: relative;
-    
     height: 600px;
 }
 
@@ -211,7 +226,6 @@ form h2{
     top: 50%;
     text-align: center;
     position: absolute;
-
 }
 
 .img-2{ 
